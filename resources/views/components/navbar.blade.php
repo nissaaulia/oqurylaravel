@@ -20,20 +20,20 @@
             </div>
             <div class="modal-body" style="padding:	2rem; padding-top: 0; padding-bottom: 0;">
               <ul class="navbar-nav responsive-header-2-3 me-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/" style="color: #E7E7E8;">Home</a>
+                <li class="nav-item">
+                  <a class="nav-link {{Request::segment(1)=="" ? 'active text-white' : 'null'}}" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/portfolio-kita">Portfolio</a>
+                  <a class="nav-link {{Request::segment(1)=="portfolio-kita" ? 'active text-white' : 'null'}}" href="/portfolio-kita">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pricing">Pricing</a>
+                  <a class="nav-link {{Request::segment(1)=="pricing" ? 'active text-white' : 'null'}}" href="/pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/about-us">About Us</a>
+                  <a class="nav-link {{Request::segment(1)=="about-us" ? 'active text-white' : 'null'}}" href="/about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/faq">FAQ</a>
+                  <a class="nav-link {{Request::segment(1)=="faq" ? 'active text-white' : 'null'}}" href="/faq">FAQ</a>
                 </li>
               </ul>
             </div>
@@ -47,20 +47,20 @@
     
       <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-3">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="/" style="color: #E7E7E8;">Home</a>
+          <li class="nav-item">
+            <a class="nav-link {{Request::segment(1)=="" ? 'active text-white' : 'null'}}" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/portfolio-kita">Portfolio</a>
+            <a class="nav-link {{Request::segment(1)=="portfolio-kita" ? 'active text-white' : 'null'}}" href="/portfolio-kita">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/pricing">Pricing</a>
+            <a class="nav-link {{Request::segment(1)=="pricing" ? 'active text-white' : 'null'}}" href="/pricing">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about-us">About Us</a>
+            <a class="nav-link {{Request::segment(1)=="about-us" ? 'active text-white' : 'null'}}" href="/about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/faq">FAQ</a>
+            <a class="nav-link {{Request::segment(1)=="faq" ? 'active text-white' : 'null'}}" href="/faq">FAQ</a>
           </li>
         </ul>
         <a href="/contact"><button class="btn btn-fill-header-2-3">Contact Us</button></a>
